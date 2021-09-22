@@ -44,8 +44,9 @@ What I Learnt:
     content: '';
     width: 16px;
     height: 16px;
-    background-color: aquamarine;
+    background-color: #001220;
     border: white 4px solid;
+    border-radius: 0.00000000000001px;
     position: absolute;
     top: 20px;
     transform: rotate(45deg);

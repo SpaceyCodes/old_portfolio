@@ -16,7 +16,8 @@ img{
 }
 
 body{
-    background-color: #c0dbff;
+    /* background-color: #c0dbff; */
+    background-color: white;
     /* background-color: #eee; */
     font-family: 'Roboto', sans-serif;
 }
@@ -30,7 +31,10 @@ h1,h2{
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-bottom: 200px;
+    background-image: url("../src/layered-waves-haikei-purpleflat.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-position-y: 87%;
 }
 #content-block {
     position: absolute;
@@ -40,7 +44,7 @@ h1,h2{
     white-space: nowrap;
     text-align: right; /*for ie, as ie does not support text-align: end*/
     text-align: end;
-    color: black;
+    color: white;
     cursor: initial;
 }
 #name {
@@ -60,7 +64,7 @@ h1,h2{
 
 
 .link :hover{
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 500px){
 /* Handles font-size in mobile view */
@@ -103,7 +107,7 @@ header{
     margin-right: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
-    border: solid 3px #989898;
+    border: solid 3px #FA7268;
     border-right: none;
     border-left: none;
     display: flex;
@@ -114,6 +118,14 @@ header h1{
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
+}
+#project-banner {
+    background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;;
+}
+#footer-content {
+    margin: 0 !important;
 }
 #project-banner>div {
     font-family: 'Roboto', sans-serif;
@@ -156,7 +168,7 @@ header h1{
     font-size: 1.5em;
 }
 .each-project:hover{
-    background-color: #f8f8f8;
+    background-color: #e5e5e5;
     transition: 0.1s;
     box-shadow: 10px 10px 10px -9px rgba(0,0,0,0.3);
 }

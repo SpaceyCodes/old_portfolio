@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
 /* 
 project-style.css is a self made template css that styles all my projects.
 This file styles my project pages regardless of content. Therefore this CSS file is able to style project1 - 4.
@@ -17,7 +17,8 @@ a{
     color: inherit;
 }
 body{
-    background-color: #c0dbff;
+    background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+    
 }
 img{
     width: 100%;
@@ -34,6 +35,9 @@ img{
     left: 10px;
     top: 10px;
     transition: 0.2s;
+}
+#back-block svg{
+    fill: black;
 }
 #back-block:hover{
     left: 5px;
@@ -62,7 +66,8 @@ img{
     margin-bottom: 10px;
 }
 #link-block span a{
-    color: #ff000b;
+    /* color: #ff000b; */ /*Old color*/
+    color: #4800e4;
 }
 #link-block span a:hover{
     opacity: 0.8;
@@ -73,8 +78,10 @@ img{
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    line-height: 140%;
     font-size: 18px;
     text-align: justify;
+    color: black;
 }
 @media (max-width: 1200px) {
     /* If screen size is less than 800px, then change the width of element */
@@ -111,7 +118,7 @@ img{
     }
 }
 .text-block{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
 }
 /* technologies-used CSS component */

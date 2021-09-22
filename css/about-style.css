@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
 /* This page handles the about.html page */
 *{
     font-family: 'Roboto', sans-serif;
@@ -9,10 +9,9 @@
 }
 a{
     text-decoration: none;
-    color: black;
 }
 body{
-    background-color: #c0dbff;
+    background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
 }
 img{
     width: 100%;
@@ -22,7 +21,6 @@ img{
     width: 100%;
     position: relative;
     height: 80px;
-    
 }
 #back-block {
     position: absolute;
@@ -30,9 +28,13 @@ img{
     top: 10px;
     transition: 0.2s;
 }
+#back-block svg{
+    fill: black;
+}
 #back-block:hover{
     left: 5px;
 }
+
 /* MyHistory CSS component */
 #my-history-section {
     width: 90%;
@@ -54,7 +56,11 @@ img{
     margin-bottom: 10px;
 }
 #link-block span a{
-    color: #ff000b;
+    /* color: #ff000b; */ /*Old color*/
+    color: #4800e4;
+}
+.text-block {
+    font-size: 19px;
 }
 .description-block {
     font-family: 'Source Sans Pro', sans-serif;
@@ -64,6 +70,8 @@ img{
     margin-bottom: 10px;
     font-size: 18px;
     text-align: justify;
+    line-height: 140%;
+    color: black;
 }
 @media (max-width: 800px) {
     /* If screen size is less than 800px, then change the width of element */

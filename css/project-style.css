@@ -121,6 +121,63 @@ img{
     font-size: 20px;
     font-weight: 500;
 }
+/* Project CSS component */
+#project-banner {
+    padding-top: 50px;
+    padding-bottom: 50px;;
+    width: 100vw;
+    max-width:100%;
+}
+#footer-content {
+    margin: 0 !important;
+}
+#project-banner>div {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.each-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0 0 250px;
+    height: 250px;
+    margin: 20px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px -9px rgba(0,0,0,0.1);
+}
+.each-project h2{
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+.each-project:hover{
+    background-color: #e5e5e5;
+    transition: 0.1s;
+    box-shadow: 10px 10px 10px -9px rgba(0,0,0,0.3);
+}
+@media (max-width: 500px){
+    /* Handles font-size in mobile view */
+    .each-project {
+        flex: 0 0 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 300px){
+    /* Handles font-size in mobile view */
+    .each-project {
+        flex: 0 0 150px;
+        height: 150px;
+    }
+    .each-project p{
+        font-size: 15px;
+    }
+}
 /* technologies-used CSS component */
 header{
     display: flex;

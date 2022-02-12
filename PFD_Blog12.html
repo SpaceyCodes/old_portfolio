@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/project-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="icon" href="src/wenkang.png">
+    <title>Lee Wen Kang</title>
+</head>
+
+<body>
+    <div id="back-button-block">
+        <div id="back-block">
+            <a href="javascript:history.back()">
+                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="black"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+    <!-- 
+    This page can be used as a template for other projects.
+    To change projects, just change image, description and "Technologies Used" icons.
+    
+    Page contains an image that represents the project, a short discription abou the project and my experiences
+    and a "Technologies Used" section to tell visitors what kind of technologies were used in the project.
+    -->
+    <section id="project-section">
+        <h2 class="text-block">
+            Fail-Safe Funds Transfer Experience
+        </h2>
+        <div id="link-block">
+            <span id="link-icon">
+                <svg width="15px" height="15px" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                    <path
+                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
+                </svg>
+            </span>
+            <span>
+                <a href="https://github.com/YC-Chow/PFD_OCBC" target="_Blank">Github (Front-end)</a>
+                <span>/</span>
+                <a href="https://github.com/NPLeeWenKang/PFD-Flask-Server" target="_Blank">Github (Back-end)</a>
+            </span>
+
+        </div>
+        <div class="text-block" style="margin-top: 10px;margin-bottom: 0px; font-weight: bold;">
+            Week 12
+        </div>
+        <div class="description-block">
+            After a long 7 week break from our 1st hackathon, it was time to continue with the PFD Assignment. Over the
+            7 weeks, our team decided not to work on the project as many of our teammates had exams and projects to
+            submit. On the first Wednesday of the week, our team met up in class face-to-face where we discuss the
+            improvement that will be implemented. We looked back at our lecturers' and OCBC coachs' feedback during the
+            hackathon and had to brainstorm how to improve our current application.
+        </div>
+        <div class="description-block">
+            By considering the feedbacks given and brainstorming ourselves, we have came up with several different
+            features/improvements that can be implemented.
+        </div>
+        <div class="description-block">
+            Firstly, we plan to implement scheduled transaction, which
+            would allow users to schedule a trasaction at a later date.
+        </div>
+        <div class="description-block">
+            Secondly, Giro transaction will allow users to
+            connect themselves with a billing organisation, which will allow the billing organisation to initiate a
+            transaction to pay bills or taxes.
+        </div>
+        <div class="description-block">
+            Thirdly, a QR code transfer method will be implemented. This would allow
+            users to scan a recipient's QR code to transfer money, reducing the need to fill in the recipient's account
+            number, IC number or phone number.
+        </div>
+        <div class="description-block">
+            Fourthly, a discord notification system will be implemented that will
+            notify users about errors and transactions made.
+        </div>
+        <div class="description-block">
+            Fifthly, we will be changing our code architechure to allow
+            multiple account holders to hold several bank accounts such as savings account, checking account or
+            retirement account.
+        </div>
+        <div class="description-block">
+            Sixthly, the database will be migrated to Azure's PostgreSQL database (This will be
+            explain in later weeks).
+        </div>
+        <div class="description-block">
+            Seventhly, a CRUD application will be built which would allow OCBC staff and
+            developers to access the database to troubleshoot issues.
+        </div>
+        <div class="description-block">
+            Eightly, a MAC address tracking will be implemented so that the system will be able to track if the account
+            has been accessed from another device and notify users about unauthorised logins.
+        </div>
+        <div class="description-block">
+            Ninethly, NFC transaction was will allow users to transfer money by tapping each other's phone. This would
+            allow money to be transfered very quickly as the recipient's information does not need to be typed in.
+        </div>
+        <div class="description-block">
+            Lastly, more validation will be applied to the existing code base and the newly implemented features
+        </div>
+    </section>
+
+    <footer id="footer-content">
+        <!--
+            Footer area. This area is visible on all pages.
+            This area contains social media links and contains my name.
+        -->
+        <div id="socials-content">
+            <div id="github-block">
+                <a href="https://github.com/SpaceyCodes" target="_blank">
+                    <img id='GitHubIMG' src="src/GItHub.png" alt="GitHub logo">
+                </a>
+
+            </div>
+            <div id="linkedin-block">
+                <a href="https://linkedin.com/in/leewenkang/" target="_blank">
+                    <img id='LinkedInIMG' src="src/LinkedIn.png" alt="LinkedIn Logo">
+                </a>
+
+            </div>
+            <div id="email-block">
+                <a href="mailto:spaceycodes@gmail.com" id="emailIMG">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-envelope" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div id="made-by-text">
+            &copy; Lee Wen Kang
+        </div>
+    </footer>
+</body>
+
+</html>
